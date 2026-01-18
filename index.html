@@ -544,9 +544,28 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <p class="footer-social-text">Subscribe</p>
+          <form class="footer-form">
+            <label class="footer-form-label" for="">
+              <input
+                type="email"
+                class="footer-input"
+                name="user-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="footer-form-btn">
+              Subscribe
+              <svg class="footer-form-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="modal-icon" width="8" height="8">
@@ -598,20 +617,24 @@
               ></textarea>
             </label>
           </div>
-          <div class="modal-field">
+          <div class="modal-field check-margin">
             <input
-              class="modal-check"
+              class="modal-check visually-hidden"
               type="checkbox"
               name="policy"
               id="policy"
               value="true"
             />
             <label for="policy" class="modal-check-label"
-              ><span></span>I accept the terms and conditions of the
+              ><span>
+                <svg class="modal-check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
               <a href="">Privacy Policy</a>
             </label>
           </div>
-          <button type="submit">Send</button>
+          <button class="hero-button" type="submit">Send</button>
         </form>
       </div>
     </div>
